@@ -1,4 +1,4 @@
-package org.gatech.cs6310.dao;
+package org.gatech.cs6310.DAO;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

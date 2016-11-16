@@ -1,4 +1,4 @@
-package org.gatech.cs6310.dao.config;
+package org.gatech.cs6310.DAO.config;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
