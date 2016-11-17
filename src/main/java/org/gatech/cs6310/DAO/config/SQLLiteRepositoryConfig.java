@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @EnableAutoConfiguration
-@EnableJpaRepositories(transactionManagerRef="transactionManager", basePackages={"org.gatech.cs6310.dao.sqlLite"})
+@EnableJpaRepositories(transactionManagerRef="transactionManager", basePackages={"org.gatech.cs6310.DAO"})
 public class SQLLiteRepositoryConfig {
 }
 
