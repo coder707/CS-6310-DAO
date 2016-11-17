@@ -9,12 +9,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Hello world!
  *
  */
 @SpringBootApplication
+@ComponentScan(basePackages = "org.gatech.cs6310.DAO")
 public class DAOLayer 
 {
 
@@ -23,7 +25,8 @@ public class DAOLayer
 	public DataSource dataSource() {
 	        DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
 	        dataSourceBuilder.driverClassName("org.sqlite.JDBC");
-	        dataSourceBuilder.url("jdbc:sqlite:your.db");
+	        //dataSourceBuilder.url("jdbc:sqlite:C:/Sandbox/CS-6310-DAO/CS-6310-DAO/database/school.db");
+	        dataSourceBuilder.url("jdbc:sqlite:school.db");
 	        return dataSourceBuilder.build();   
 	}
 	
