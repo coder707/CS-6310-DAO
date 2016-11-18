@@ -54,7 +54,7 @@ public class Instructor implements Serializable{
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("INSTRUCTOR [");
+		builder.append("Instructor [");
 		if (id != null) {
 			builder.append("UUID=");
 			builder.append(id);
