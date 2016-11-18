@@ -1,6 +1,6 @@
 package org.gatech.cs6310.DAO;
 
-import org.gatech.cs6310.DAO.entity.Student;
+import org.gatech.cs6310.DAO.entity.student.Student;
 import org.gatech.cs6310.DAO.service.DAOService;
 import org.junit.Test;
 import org.junit.runner.RunWith;

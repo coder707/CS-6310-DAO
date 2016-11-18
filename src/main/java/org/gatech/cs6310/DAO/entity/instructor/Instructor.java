@@ -1,4 +1,4 @@
-package org.gatech.cs6310.DAO.entity;
+package org.gatech.cs6310.DAO.entity.instructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,8 +6,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="STUDENTS")
-public class Student {
+@Table(name="INSTRUCTORS")
+public class Instructor {
 
 	 @Id
 	 @Column(name = "UUID")	
@@ -50,7 +50,7 @@ public class Student {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Student [");
+		builder.append("INSTRUCTOR [");
 		if (id != null) {
 			builder.append("UUID=");
 			builder.append(id);

@@ -1,7 +1,7 @@
 package org.gatech.cs6310.DAO;
 
-import org.gatech.cs6310.DAO.entity.student.Student;
-import org.gatech.cs6310.DAO.entity.student.StudentRepository;
+import org.gatech.cs6310.DAO.entity.instructor.Instructor;
+import org.gatech.cs6310.DAO.entity.instructor.InstructorRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,18 +11,17 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
-
-public class StudentRepositoryTests {
+public class InstructorRepositoryTests {
 
 		
 	   @Autowired
-	    private StudentRepository studentRepository;
+	    private InstructorRepository instructorRepository;
 	   
 	   @Test
 	    public void testFindAll() {
 		   
-			for (Student student : studentRepository.findAll()) {
-				System.out.println(student);
+			for (Instructor instructor : instructorRepository.findAll()) {
+				System.out.println(instructor);
 			}
 			
 	     
