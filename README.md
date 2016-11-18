@@ -1,2 +1,2 @@
 # CS-6310-DAO
-DAO Layer Using Spring Boot and SQLLite
+DAO Layer Using Spring Boot and H2
