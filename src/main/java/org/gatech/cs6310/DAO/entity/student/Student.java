@@ -1,5 +1,7 @@
 package org.gatech.cs6310.DAO.entity.student;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,9 +9,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="STUDENTS")
-public class Student {
+public class Student implements Serializable {
 
-	 @Id
+	 /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4061555444931095195L;
+
+	@Id
 	 @Column(name = "UUID")	
 	 private Integer id;
 	 
